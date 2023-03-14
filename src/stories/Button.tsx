@@ -1,6 +1,6 @@
 import React from 'react';
 import './button.css';
-
+import test from '../test.png'
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -42,6 +42,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
+      <img src={test} />
       {label}
     </button>
   );
